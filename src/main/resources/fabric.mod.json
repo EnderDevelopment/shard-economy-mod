@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "shardeconomymod",
+  "version": "${version}",
+  "name": "Shard Economy Mod",
+  "description": "A server-side Fabric mod for Minecraft 1.21.11 inspired by EconomyCraft with NO money limit (64-bit integer balance).",
+  "authors": ["YourName"],
+  "license": "MIT",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "com.suliman11sys.shardeconomymod.ShardEconomyMod"
+    ]
+  },
+  "minecraft": {
+    "*": {
+      "version": "1.21.11",
+      "ordering": "required"
+    }
+  },
+  "depends": {
+    "fabricloader": ">=0.14.0"
+  }
+}

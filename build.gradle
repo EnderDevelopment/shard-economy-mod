@@ -1,0 +1,35 @@
+plugins {
+    id 'fabric-loom' version '1.6-SNAPSHOT'
+    id 'maven-publish'
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'Fabric'
+        url = 'https://maven.fabricmc.net/'
+    }
+}
+
+extra {
+    apply plugin: 'fabric-loom'
+    loom {
+        minecraftVersion = '1.21.11'
+        mappings = '1.21.11'
+        accessWidener = 'src/main/resources/accessWidener.txt'
+        modId = 'shardeconomymod'
+        version = '1.0.0'
+        namespace = 'com.suliman11sys.shardeconomymod'
+        mainClass = 'com.suliman11sys.shardeconomymod.ShardEconomyMod'
+    }
+}
+
+tasks {
+    genSources {
+        dependsOn 'genSources'
+    }
+
+    build {
+        dependsOn 'build'
+    }
+}

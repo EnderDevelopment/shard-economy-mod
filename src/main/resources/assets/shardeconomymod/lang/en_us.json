@@ -1,0 +1,8 @@
+{
+  "item.shardeconomymod.rulebook": "Server Rulebook",
+  "command.shardeconomymod.bal": "Your balance: %s Shards",
+  "command.shardeconomymod.pay": "Paid %s Shards to %s",
+  "command.shardeconomymod.sell": "Sold %s for %s Shards",
+  "command.shardeconomymod.buy": "Bought %s diamonds for %s Shards",
+  "command.shardeconomymod.rules": "Here are the server rules:"
+}
